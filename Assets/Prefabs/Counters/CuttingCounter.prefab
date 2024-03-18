@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2838326741850008849}
   - component: {fileID: 3624166618720779176}
   - component: {fileID: 3063254193551781378}
+  - component: {fileID: 6494566031587336546}
   m_Layer: 5
   m_Name: ProgressBarUI
   m_TagString: Untagged
@@ -116,6 +117,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4232b8ad952c3047bbc7da82c9aa569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  barImage: {fileID: 4906363980580827930}
+  cuttingCounter: {fileID: 7829383458546372315}
+--- !u!114 &6494566031587336546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614939080075161929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 736b40508b385614ba3b994f018cf65e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 2
 --- !u!1 &2431218570854953102
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,8 +364,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4589716710238282922, guid: d72bee846803d074784ffb8f64e993ca,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7875453264242736436}
   m_SourcePrefab: {fileID: 100100000, guid: d72bee846803d074784ffb8f64e993ca, type: 3}
+--- !u!1 &1893546573697888792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4589716710238282922, guid: d72bee846803d074784ffb8f64e993ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 2735595462769170098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7875453264242736436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893546573697888792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8557b6e93bdb56d4397a5a6345ce0bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuttingCounter: {fileID: 7829383458546372315}
 --- !u!4 &1893546573697888793 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4589716710238282923, guid: d72bee846803d074784ffb8f64e993ca,
